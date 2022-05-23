@@ -95,11 +95,6 @@ button:focus {
     margin: 0 auto;
 }
 
-.page-footer {
-    clear: both;
-    padding-bottom: 20px;
-}
-
 * {
     box-sizing:border-box;
 }
@@ -142,6 +137,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .grid__item {
