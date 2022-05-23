@@ -7,7 +7,7 @@
     --sun-50: #fcffad;
     --sun-100: #f76414;
     --font-weight-700: 700;
-}    
+}
 
 body {
     background-color: var(--white);
@@ -21,12 +21,12 @@ h1 {
     font-size: 30px;
     font-weight: var(--font-weight-700);
 }
-  
+
 h2 {
     font-size: 24px;
     font-weight: var(--font-weight-700);
 }
-  
+
 h3 {
     font-size: 18px;
     font-weight: var(--font-weight-700);
@@ -40,12 +40,13 @@ a:visited {
     /* visited link */
     color: var(--primary-color);
 }
-  
-a:hover, a:focus {
+
+a:hover,
+a:focus {
     /* No underlining when hovering over a link */
     text-decoration: none;
 }
-  
+
 a:active {
     /* selected link */
     color: var(--primary-color);
@@ -67,7 +68,8 @@ button {
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
     /* lets the mouse appear as a hand when hovering over the button */
     cursor: pointer;
     /* reduces the opacity of the button to 80% */
@@ -176,7 +178,8 @@ button:hover, button:focus {
     padding-top: 50px;
 }
 
-.button, button {
+.button,
+button {
     /* overwrites browser defaults */
     /* resets the border */
     border: none;
