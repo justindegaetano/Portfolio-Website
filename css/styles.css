@@ -81,7 +81,6 @@ button:focus {
     color: var(--dark-grey);
 }
 
-
 .profile__portrait {
     float: left;
     width: 250px;
@@ -103,7 +102,6 @@ button:focus {
     display: flex;
     width: 100%;
     padding: 20px;
-    border-bottom: 1px solid var(--dark-grey);
 }
 
 .page-header__item {
@@ -153,17 +151,50 @@ button:focus {
 }
 
 .grid__item {
-    background-color: lightgrey;
+    background-color: rgb(230, 230, 230);
     width: auto;
     min-height: auto;
     margin: 0;
     padding: 10px;
     padding-bottom: 20px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
 }
 
 .grid__item:last-child {
     grid-column: 3 / 3;
     grid-row: 1 / 3;
+}
+
+.project__title,
+.project__description,
+.project__image-box{
+    margin-bottom: 3rem;
+}
+
+.project__title {
+    text-align: center;
+}
+
+.project__image-box {
+    width: 80%;
+}
+
+.project__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project__description {
+    width: 100%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.project__link {
+    text-align: center;
 }
 
 .work-main,
@@ -174,7 +205,9 @@ button:focus {
     padding: 10px;
     padding-top: 50px;
     padding-bottom: 50px;
+    text-align: center;
 }
+
 
 .button,
 button {
@@ -203,60 +236,6 @@ button:focus,
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
-}
-
-@keyframes color-change {
-    0% {
-        fill: var(--sun-0);
-    }
-    50% {
-        fill: var(--sun-50);
-    }
-    100% {
-        fill: var(--sun-100);
-    }
-}
-
-.sun {
-    animation-duration: 7s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-    from {
-        transform: translate(0, 50px);
-    }
-    to {
-        transform: translate(200px, 50px);
-    }
-}
-
-.cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
-
-@keyframes cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-    to {
-        transform: translate(100px, 48px);
-    }
-}
-
-.cloud-back {
-animation-duration: 30s;
-animation-name: cloud-move-reverse;
-animation-iteration-count: infinite;
-animation-direction: alternate;
-animation-timing-function: linear;
 }
 
 
