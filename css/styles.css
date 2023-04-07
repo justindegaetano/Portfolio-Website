@@ -81,6 +81,7 @@ button:focus {
     color: var(--dark-grey);
 }
 
+
 .profile__portrait {
     float: left;
     width: 250px;
@@ -139,8 +140,14 @@ button:focus {
 }
 
 .grid__item {
-    display: inline-block;
-    width: 33%;
+    background-color: rgb(230, 230, 230);
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
 }
 
 .grid {
@@ -150,17 +157,6 @@ button:focus {
     padding-top: 20px;
     margin-left: 10%;
     margin-right: 10%;
-}
-
-.grid__item {
-    background-color: rgb(230, 230, 230);
-    width: auto;
-    min-height: auto;
-    margin: 0;
-    padding: 10px;
-    padding-bottom: 20px;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
 }
 
 .grid__item:last-child {
@@ -205,7 +201,6 @@ button:focus {
     text-align: center;
 }
 
-
 .about-main {
     margin-left: 100px;
     margin-right: 100px;
@@ -215,7 +210,6 @@ button:focus {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .button,
 button {
@@ -245,7 +239,6 @@ button:focus,
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
-
 
 /* Responsive design configurations for smaller screens */
 
