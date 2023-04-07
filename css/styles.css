@@ -145,7 +145,7 @@ button:focus {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
     padding-top: 20px;
     margin-left: 10%;
@@ -166,12 +166,6 @@ button:focus {
 .grid__item:last-child {
     grid-column: 2 / 2;
     grid-row: 1 / 2;
-}
-
-.project__title,
-.project__description,
-.project__image-box{
-    margin-bottom: 3rem;
 }
 
 .project__title {
@@ -210,6 +204,7 @@ button:focus {
     padding-bottom: 50px;
     text-align: center;
 }
+
 
 .about-main {
     margin-left: 100px;
