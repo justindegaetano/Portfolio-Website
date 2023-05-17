@@ -1,67 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justin DeGaetano | Portfolio</title>
-    <link rel="shortcut icon" href="/img/favicon.jpeg">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3eed0ae11b.js" crossorigin="anonymous"></script>
 </head>
-
-<body>
-    <header class="page-header">
-        <!--Temporary logo inserted; will update design at a later date-->
-        <img src="img/logo.png" alt="Website logo" class="page-header__item">
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                </li>
-                <li>
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-                </li>
-                <li>
-                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-                </li>
-                <li>
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="profile">
-            <!--Suitable portrait for now, but I intend to update with one of higher quality-->
-            <img src="/img/portrait.jpg" class="profile__portrait" alt="Portrait of Justin DeGaetano.">
-            <h2>Hello World!</h2>
+<body class="main-content">
+    <header class="section sec1 header active" id="home">
+        <div class="header-content">
+          <div class="left-header">
+            <div class="h-shape"></div>
+            <div class="image">
+                <img src="img/portrait.jpg" alt="">
+            </div>
+          </div>
+          <div class="right-header">
+            <h1 class="name">
+                Hi, I'm <span class="name"> Justin DeGaetano.</span>
+                A Web Developer.
+            </h1>
             <p>
-                My name is Justin DeGaetano. I am a <span>web</span> developer from the US.
+                Let's build virtual bridges that connect people, ideas, and possibilities through the power of web development.
             </p>
-            <a href="https://github.com/justindegaetano">Check out some of my code</a>
+            <div class="btn-con">
+              <a href="" class="main-btn">
+                <span class="btn-text">Download CV</span>
+                <span class="btn-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main>
+        <section class="section sec2 about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">identity</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <p>
+                        As a passionate and driven developer, I have an insatiable appetite for learning and exploring new technologies. 
+                        With a strong foundation in both front-end and back-end development, I strive to create dynamic and user-centric solutions to tackle complex challenges.
+                    </p>
+                    <div class="btn-con">
+                        <a href="" class="main-btn">
+                          <span class="btn-text">Download CV</span>
+                          <span class="btn-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">8</p>
+                            <p class="small-text">Projects </br> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">1</p>
+                            <p class="small-text">Year of </br> Experience</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">Limitless</p>
+                            <p class="small-text">Motivation </br> to Improve</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">Infinite</p>
+                            <p class="small-text">Desire </br> to Learn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat-title">My Skills</div>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">HTML</p>
+                        <div class="progress-con">
+                            <p class="prog text">94%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">CSS</p>
+                        <div class="progress-con">
+                            <p class="prog text">88%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">JavaScript</p>
+                        <div class="progress-con">
+                            <p class="prog text">77%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">React</p>
+                        <div class="progress-con">
+                            <p class="prog text">85%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">React Native</p>
+                        <div class="progress-con">
+                            <p class="prog text">71%</p>
+                            <div class="progress">
+                                <span class="react-native"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">TypeScript</p>
+                        <div class="progress-con">
+                            <p class="prog text">73%</p>
+                            <div class="progress">
+                                <span class="typescript"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Angular</p>
+                        <div class="progress-con">
+                            <p class="prog text">67%</p>
+                            <div class="progress">
+                                <span class="angular"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Node.js</p>
+                        <div class="progress-con">
+                            <p class="prog text">90%</p>
+                            <div class="progress">
+                                <span class="nodejs"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">My Timeline</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <p class="tl-duration">2022 - 2023</p>
+                    <h5>Full-Stack Web Development Bootcamp<span></br>CareerFoundry.com </span></h5>
+                    <p>
+                        Completed a comprehensive web development program, gaining hands-on experience and proficiency in HTML, CSS, JavaScript, and various frameworks. 
+                        Acquired practical skills in building responsive, user-centric websites and web applications through real-world projects and mentorship.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section sec3 portfolio" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bg-text">Archives</span></h2>
+            </div>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/myFlix_Angular.png" alt="myFlix App using Angular">
+                    </div>
+                    <div class="hover-item">
+                        <h3>myFlix Client</br>
+                            <span>Developed Using Angular</span>
+                        </h3>
+                        <p>
+                            myFlix provides users access to information about different movies, directors, and genres. 
+                            Users will be able to sign up, update their personal information, and create a list of their favorite movies.
+                        </p>
+                        <div class="icons">
+                            <a href="https://justindegaetano.github.io/myFlix-Angular-Client/" target="_blank" class="icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                            <a href="https://github.com/justindegaetano/myFlix-Angular-Client" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/myFlix.PNG" alt="myFlix App using React">
+                    </div>
+                    <div class="hover-item">
+                        <h3>myFlix Client</br>
+                            <span>Developed Using React</span>
+                        </h3>
+                        <p>
+                            myFlix provides users access to information about different movies, directors, and genres. 
+                            Users will be able to sign up, update their personal information, and create a list of their favorite movies.
+                        </p>
+                        <div class="icons">
+                            <a href="https://justin-myflixdb.netlify.app/" target="_blank" class="icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                            <a href="https://github.com/justindegaetano/myFlix-client" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/myFlix_api.png" alt="myFlix API">
+                    </div>
+                    <div class="hover-item">
+                        <h3>myFlix API</br>
+                            <span>Developed Using Node.js</span>
+                        </h3>
+                        <p>
+                            Server-side component of the myFlix web application. 
+                            The application will provide users with access to information about different movies, directors, and genres. 
+                            Users will be able to sign up, update their personal information, and create a list of their favorite movies.
+                        </p>
+                        <div class="icons">
+                            </a>
+                            <a href="https://github.com/justindegaetano/movie_api" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/chat.png" alt="Chat App">
+                    </div>
+                    <div class="hover-item">
+                        <h3>Chat App</br>
+                            <span>Developed Using React Native</span>
+                        </h3>
+                        <p>
+                            A messaging app for mobile devices. 
+                            The app will provide users with a chat interface, options to share images and their location, 
+                            and supports offline access for previously received messages.
+                        </p>
+                        <div class="icons">
+                            <a href="https://github.com/justindegaetano/chat-app" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/meet.PNG" alt="Meet App">
+                    </div>
+                    <div class="hover-item">
+                        <h3>Meet App</br>
+                            <span>Developed Using React</span>
+                        </h3>
+                        <p>
+                            A serverless, progressive web application (PWA) using a test-driven development (TDD) technique. 
+                            Meet App allows users to search through a collection of events, to discover where the events will be located, and to search for any events taking place in a specific city.
+                        </p>
+                        <div class="icons">
+                            <a href="https://justindegaetano.github.io/meet_app/" target="_blank" class="icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                            <a href="https://github.com/justindegaetano/meet_app" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/portfolio.png" alt="Portfolio Site">
+                    </div>
+                    <div class="hover-item">
+                        <h3>Portfolio Site</br>
+                            <span>Developed Using HTML, SCSS, & Vanilla JS</span>
+                        </h3>
+                        <p>
+                            The Github Repository for the Portfolio site you're currently viewing.
+                        </p>
+                        <div class="icons">
+                            <a href="https://github.com/justindegaetano/Portfolio-Website" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+        </section>
+        <section class="section sec5 contact" id="contact">
+            <div class="main-title">
+                <h2>Contact <span>Me</span><span class="bg-text">Converse</span></h2>
+            </div>
+            <div class="contact-content-con">
+                <div class="left-contact">
+                    <p>
+                        Let's collaborate and bring your vision to life. 
+                        Reach out to discuss your project and explore the possibilities together.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Location
+                            </div>
+                            <p>
+                                Massachusetts, USA
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                                Email
+                            </div>
+                            <p>
+                                justin.degaetano1990@gmail.com
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa-solid fa-language"></i>
+                                Language
+                            </div>
+                            <p>
+                                English
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-icons">
+                        <div class="contact-icon">
+                            <a href="https://github.com/justindegaetano" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-contact">
+                    <form action="https://formspree.io/f/xnqyrgdk" method="POST" class="contact-form">
+                        <div class="input-control i-c-2">
+                            <input type="text" name="name" required="" placeholder="Your Name">
+                            <input type="email" name="email" required="" placeholder="Your Email">
+                        </div>
+                        <div class="input-control">
+                            <input type="text" name="subject" required placeholder="Your Subject">
+                        </div>
+                        <div class="input-control">
+                            <textarea type="text" name="msg" cols="15" rows="8" required="" placeholder="Message here..."></textarea>
+                        </div>
+                        <div class="submit-btn">
+                            <button type="submit" value="Submit" class="main-btn">
+                                <span class="btn-icon" type="submit" value="Submit"><i class="fa-solid fa-paper-plane"></i></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="page-footer">
-        <p>
-            Find me on
-        </p>
-        <div>
-            <a href="https://github.com/justindegaetano">
-                <img src="/img/github.svg" href="https://github.com/justindegaetano" alt="Github">
-            </a>
-            <img src="/img/twitter.svg" alt="Twitter">
-            <img src="/img/linkedin.svg" alt="LinkedIn">
+    <div class="controls">
+        <div class="control control-1 active-btn" data-id="home">
+            <i class="fa-solid fa-house"></i>
         </div>
-    </footer>
+        <div class="control control-2" data-id="about">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="control control-3" data-id="portfolio">
+            <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <div class="control control-5" data-id="contact">
+            <i class="fa-solid fa-envelope-open"></i>
+        </div>
+    </div>
 
+    <div class="theme-btn">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+    </div>
+
+    <script src="js/app.js"></script>
 </body>
-
-<script src="js/tota11y.min.js"></script>
-
 </html>
