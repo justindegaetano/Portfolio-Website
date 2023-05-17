@@ -280,8 +280,7 @@ section {
 }
 .about-container .left-about p {
   line-height: 2rem;
-  padding: 1rem;
-  padding-bottom: 1.5rem;
+  padding: 1.5rem 0;
   color: var(--color-grey-1);
 }
 .about-container .left-about h4 {
@@ -920,6 +919,7 @@ section {
   }
   .about-container {
     grid-template-columns: repeat(1, 1fr);
+    padding: 0.5rem;
   }
   .about-container .right-about {
     padding: 2.5rem 5rem;
@@ -933,9 +933,11 @@ section {
   }
   .left-about p {
     text-align: center;
+    padding: none;
   }
   .left-about .btn-con {
     justify-content: center;
+    padding-bottom: 1.2rem;
   }
   .sec5 {
     padding: 2.5rem 14rem;
@@ -993,7 +995,7 @@ section {
   }
   .right-header .name {
     font-size: 2.5rem !important;
-    text-align: center;
+    text-align: left;
     padding-top: 3rem;
   }
   .about-stats .progress-bars {
@@ -1013,7 +1015,7 @@ section {
 }
 @media screen and (max-width: 850px) {
   .right-header {
-    padding: 0 4rem;
+    padding: 0 2.5rem;
   }
   .sec2,
   .sec3 {
@@ -1051,6 +1053,7 @@ section {
   }
   .about-container {
     grid-template-columns: repeat(1, 1fr);
+    padding-top: 0.8rem;
   }
   .about-container .right-about {
     grid-template-columns: repeat(1, 1fr);
@@ -1062,6 +1065,17 @@ section {
   }
   .about-container .left-about p {
     padding-left: 0;
+  }
+  .stat-title {
+    padding-top: 2.8rem;
+    padding-bottom: 1.2rem;
+  }
+  .timeline {
+    padding-top: 0;
+    padding-bottom: 7rem;
+  }
+  .contact-content-con {
+    padding-top: 1.2rem;
   }
 }
 @media screen and (max-width: 700px) {
@@ -1143,9 +1157,6 @@ section {
   .contact-item .icon {
     grid-template-columns: 25px 1fr;
   }
-  .right-header {
-    padding: 0 4rem;
-  }
 }
 @media screen and (max-width: 600px) {
   header {
@@ -1159,18 +1170,20 @@ section {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
+  .left-header {
+    padding: 0 3rem;
+  }
   .left-header .h-shape {
     display: none;
   }
   .right-header {
     grid-row: 1;
-    padding: 0 4rem;
     width: 90%;
     margin: 0 auto;
+    padding: 0 1.5rem;
   }
   .right-header .name {
-    font-size: 2.5rem !important;
-    text-align: center;
+    font-size: 2rem !important;
     padding-top: 3rem;
   }
   .header-content .left-header .imag {
