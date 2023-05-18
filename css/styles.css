@@ -236,6 +236,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  margin: auto auto;
 }
 .about-container .about-item {
   border: 1px solid var(--color-grey-5);
@@ -860,9 +861,6 @@ section {
   .container {
     padding: 7rem 11rem;
   }
-  .main-title h2 .bg-text {
-    font-size: 5.5rem;
-  }
   .contact-content-con {
     flex-direction: column;
   }
@@ -901,13 +899,28 @@ section {
     align-items: center;
   }
   .main-title h2 {
-    font-size: 4rem;
+    font-size: 3.7rem;
   }
   .main-title h2 span {
-    font-size: 4rem;
+    font-size: 3.7rem;
   }
   .main-title h2 .bg-text {
-    font-size: 4.5rem;
+    font-size: 5.8rem;
+  }
+  .about-container p {
+    font-size: 1rem;
+  }
+  .about-container .about-item .abt-text {
+    padding: 1.5rem;
+  }
+  .about-container .about-item .abt-text .large-text {
+    font-size: 2.7rem;
+    font-weight: 700;
+  }
+  .about-container .about-item .abt-text .small-text {
+    padding-left: 3rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
   }
 }
 @media screen and (max-width: 1150px) {
@@ -926,7 +939,7 @@ section {
   }
   .left-about {
     justify-content: center;
-    padding: 0 !important;
+    padding: 0;
   }
   .left-about h4 {
     text-align: center;
@@ -939,6 +952,9 @@ section {
     justify-content: center;
     padding-bottom: 1.2rem;
   }
+  .about-container .left-about {
+    padding-right: 0rem;
+  }
   .sec5 {
     padding: 2.5rem 14rem;
   }
@@ -949,17 +965,14 @@ section {
   }
   .sec2,
   .sec3 {
-    padding: 2.5rem 4rem;
+    padding: 2.5rem 7rem;
   }
   .sec5 {
     padding: 2.5rem 12rem;
   }
-  .about-container .left-about {
-    padding-right: 0rem;
-  }
   .left-about {
     justify-content: center;
-    padding: 0 !important;
+    padding: 0;
   }
   .left-about h4 {
     text-align: center;
@@ -972,13 +985,24 @@ section {
   }
   .header-content {
     grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 6rem;
   }
   .left-header {
-    padding: 0 5rem;
+    padding: 0 12rem;
   }
   .left-header .h-shape {
     display: none;
+  }
+  .left-header .h-shape-2 {
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-clip-path: polygon(30% 45%, 63% 58%, 100% 63%, 100% 100%, 70% 100%, 0 100%, 0 72%, 0 16%);
+            clip-path: polygon(30% 45%, 63% 58%, 100% 63%, 100% 100%, 70% 100%, 0 100%, 0 72%, 0 16%);
   }
   .left-header .image {
     width: 90% !important;
@@ -986,7 +1010,9 @@ section {
   }
   .right-header {
     grid-row: 1;
-    padding: 0 3rem;
+    padding-right: 0;
+    padding-top: 1.5rem;
+    padding: 0 5rem;
     width: 90%;
     margin: 0 auto;
   }
@@ -994,9 +1020,9 @@ section {
     padding: 0 2rem;
   }
   .right-header .name {
-    font-size: 2.5rem !important;
+    font-size: 2rem;
     text-align: left;
-    padding-top: 3rem;
+    padding-top: 2.4rem;
   }
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
@@ -1011,6 +1037,13 @@ section {
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 6.5rem;
+  }
+  .main-btn .btn-text {
+    font-size: 0.9rem;
+    padding: 0 1.3rem;
+  }
+  .main-btn .btn-icon {
+    padding: 0.8rem;
   }
 }
 @media screen and (max-width: 850px) {
@@ -1032,6 +1065,9 @@ section {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 5rem;
   }
+  .left-header {
+    padding: 0 9rem;
+  }
 }
 @media screen and (max-width: 775px) {
   .theme-btn {
@@ -1043,6 +1079,7 @@ section {
     bottom: 0;
     flex-direction: row;
     justify-content: center;
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -1058,7 +1095,6 @@ section {
   .about-container .right-about {
     grid-template-columns: repeat(1, 1fr);
     padding-top: 2.5rem;
-    margin: auto auto;
   }
   .about-container .left-about {
     padding-right: 0;
@@ -1077,6 +1113,21 @@ section {
   .contact-content-con {
     padding-top: 1.2rem;
   }
+  .right-header h1 {
+    padding: 0 1.5rem;
+  }
+  .right-header .name {
+    font-size: 1.8rem;
+  }
+  .right-header p {
+    font-size: 1rem;
+  }
+  .header-content {
+    padding-bottom: 5.5rem;
+  }
+  .left-header {
+    padding: 0 6rem;
+  }
 }
 @media screen and (max-width: 700px) {
   .container {
@@ -1089,7 +1140,10 @@ section {
     font-size: 3rem;
   }
   .main-title h2 .bg-text {
-    font-size: 4rem;
+    font-size: 4.7rem;
+  }
+  .left-about p {
+    font-size: 0.9rem;
   }
   .contact-item {
     padding-top: 1rem;
@@ -1168,7 +1222,6 @@ section {
   }
   .header-content {
     grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 6rem;
   }
   .left-header {
     padding: 0 3rem;
@@ -1180,11 +1233,17 @@ section {
     grid-row: 1;
     width: 90%;
     margin: 0 auto;
+    padding-top: 0.8rem;
+  }
+  .right-header h1 {
     padding: 0 1.5rem;
   }
   .right-header .name {
-    font-size: 2rem !important;
-    padding-top: 3rem;
+    font-size: 1.5rem;
+    padding-top: 0.8rem;
+  }
+  .right-header p {
+    font-size: 0.9rem;
   }
   .header-content .left-header .imag {
     margin: 0 auto;
@@ -1247,15 +1306,6 @@ section {
   .contact-item .icon {
     grid-template-columns: 25px 1fr;
   }
-  .main-title h2 {
-    font-size: 2rem;
-  }
-  .main-title h2 span {
-    font-size: 2.3rem;
-  }
-  .main-title h2 .bg-text {
-    font-size: 2.3rem;
-  }
   .sec2,
   .sec3 {
     padding: 2.5rem 1.5rem;
@@ -1272,6 +1322,15 @@ section {
   .sec5 {
     padding: 2.5rem 5rem;
   }
+  .main-title h2 {
+    font-size: 2.3rem;
+  }
+  .main-title h2 span {
+    font-size: 2.3rem;
+  }
+  .main-title h2 .bg-text {
+    font-size: 3.4rem;
+  }
 }
 @media screen and (max-width: 500px) {
   .sec2,
@@ -1280,6 +1339,9 @@ section {
   }
   .sec5 {
     padding: 2.5rem 4rem;
+  }
+  .right-header p {
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 450px) {

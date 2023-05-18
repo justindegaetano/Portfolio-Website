@@ -233,6 +233,7 @@ section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+        margin: auto auto;
     }
     .about-item {
         border: 1px solid var(--color-grey-5);
@@ -882,13 +883,6 @@ section {
         padding: 7rem 11rem;
     }
 
-    .main-title {
-        h2 {
-            .bg-text {
-                font-size: 5.5rem;
-            }
-        }
-    }
     .contact-content-con {
         flex-direction: column;
         .right-contact {
@@ -931,12 +925,33 @@ section {
     }
     .main-title {
         h2 {
-            font-size: 4rem;
+            font-size: 3.7rem;
             span {
-                font-size: 4rem;
+                font-size: 3.7rem;
             }
             .bg-text {
-                font-size: 4.5rem;
+                font-size: 5.8rem;
+            }
+        }
+    }
+    .about-container {
+        p {
+            font-size: 1rem;
+        }
+    }
+    .about-container {
+        .about-item {
+            .abt-text {
+                padding: 1.5rem;
+                .large-text {
+                    font-size: 2.7rem;
+                    font-weight: 700;
+                }
+                .small-text {
+                    padding-left: 3rem;
+                    font-size: 1rem;
+                    letter-spacing: 2px;
+                }
             }
         }
     }
@@ -958,7 +973,7 @@ section {
     }
     .left-about {
         justify-content: center;
-        padding: 0 !important;
+        padding: 0;
         h4 {
             text-align: center;
         }
@@ -971,6 +986,9 @@ section {
             padding-bottom: 1.2rem;
         }
     }
+    .about-container .left-about {
+        padding-right: 0rem;
+    }
     .sec5 {
         padding: 2.5rem 14rem;
     }
@@ -982,17 +1000,14 @@ section {
     }
     .sec2,
     .sec3 {
-        padding: 2.5rem 4rem;
+        padding: 2.5rem 7rem;
     }
     .sec5 {
         padding: 2.5rem 12rem;
     }
-    .about-container .left-about {
-        padding-right: 0rem;
-    }
     .left-about {
         justify-content: center;
-        padding: 0 !important;
+        padding: 0;
         h4 {
             text-align: center;
         }
@@ -1005,13 +1020,23 @@ section {
     }
     .header-content {
         grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 6rem;
     }
 
     .left-header {
-        padding: 0 5rem;
+        padding: 0 12rem;
         .h-shape {
             display: none;
+        }
+        .h-shape-2 {
+            transition: all .4s ease-in-out;
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-secondary);
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            clip-path: polygon(30% 45%, 63% 58%, 100% 63%, 100% 100%, 70% 100%, 0 100%, 0 72%, 0 16%);
         }
         .image {
             width: 90% !important;
@@ -1021,16 +1046,18 @@ section {
     }
     .right-header {
         grid-row: 1;
-        padding: 0 3rem;
+        padding-right: 0;
+        padding-top: 1.5rem;
+        padding: 0 5rem;
         width: 90%;
         margin: 0 auto;
         h1 { 
             padding: 0 2rem;
         }
         .name {
-            font-size: 2.5rem !important;
+            font-size: 2.0rem;
             text-align: left;
-            padding-top: 3rem;
+            padding-top: 2.4rem;
         }
     }
     .about-stats .progress-bars {
@@ -1046,6 +1073,15 @@ section {
     .portfolios {
         grid-template-columns: repeat(1, 1fr);
         padding: 0 6.5rem;
+    }
+    .main-btn {
+        .btn-text {
+            font-size: .9rem;
+            padding: 0 1.3rem;
+        }
+        .btn-icon {
+            padding: .8rem;
+        }
     }
 }
 
@@ -1068,6 +1104,9 @@ section {
         grid-template-columns: repeat(1, 1fr);
         padding: 0 5rem;
     }
+    .left-header {
+        padding: 0 9rem;
+    }
 }
 
 @media screen and (max-width:775px) {
@@ -1080,6 +1119,7 @@ section {
         bottom: 0;
         flex-direction: row;
         justify-content: center;
+        position: fixed;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
@@ -1094,7 +1134,6 @@ section {
         .right-about {
             grid-template-columns: repeat(1, 1fr);
             padding-top: 2.5rem;
-            margin: auto auto;
         }
         .left-about {
             padding-right: 0;
@@ -1114,6 +1153,23 @@ section {
     .contact-content-con {
         padding-top: 1.2rem;
     }
+    .right-header {
+        h1 { 
+            padding: 0 1.5rem;
+        }
+        .name {
+            font-size: 1.8rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    .header-content {
+        padding-bottom: 5.5rem;
+    }
+    .left-header {
+        padding: 0 6rem;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -1127,8 +1183,14 @@ section {
                 font-size: 3rem;
             }
             .bg-text {
-                font-size: 4rem;
+                font-size: 4.7rem;
             }
+        }
+    }
+
+    .left-about {
+        p {
+            font-size: .9rem;
         }
     }
     .contact-item {
@@ -1212,7 +1274,6 @@ section {
     }
     .header-content {
         grid-template-columns: repeat(1, 1fr);
-        padding-bottom: 6rem;
     }
 
     .left-header {
@@ -1221,16 +1282,24 @@ section {
             display: none;
         }
     }
+
     .right-header {
         grid-row: 1;
         width: 90%;
         margin: 0 auto;
-        padding: 0 1.5rem;
-        .name{
-            font-size: 2.0rem !important;
-            padding-top: 3rem;
+        padding-top: .8rem;
+        h1 { 
+            padding: 0 1.5rem;
+        }
+        .name {
+            font-size: 1.5rem;
+            padding-top: .8rem;
+        }
+        p {
+            font-size: .9rem;
         }
     }
+
     .header-content .left-header .imag {
         margin: 0 auto;
         width: 90%;
@@ -1303,20 +1372,6 @@ section {
             grid-template-columns: 25px 1fr;
         }
     }
-
-
-    .main-title {
-        h2{
-            font-size: 2rem;
-            span {
-                font-size: 2.3rem;
-            }
-            .bg-text {
-                font-size: 2.3rem;
-            }
-        }
-    }
-
     .sec2,
     .sec3 {
         padding: 2.5rem 1.5rem;
@@ -1334,6 +1389,17 @@ section {
     .sec5 {
         padding: 2.5rem 5rem;
     }
+    .main-title {
+        h2{
+            font-size: 2.3rem;
+            span {
+                font-size: 2.3rem;
+            }
+            .bg-text {
+                font-size: 3.4rem;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -1343,6 +1409,11 @@ section {
     }
     .sec5 {
         padding: 2.5rem 4rem;
+    }
+    .right-header {
+        p {
+            font-size: .9rem;
+        }
     }
 }
 
