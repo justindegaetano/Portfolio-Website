@@ -1278,6 +1278,7 @@ section {
   }
   .portfolios {
     padding: 0 2.5rem;
+    padding-bottom: 5rem;
   }
   .contact-content-con {
     flex-direction: column;
@@ -1344,6 +1345,9 @@ section {
   .sec5 {
     padding: 2.5rem 4rem;
   }
+  .sec2 {
+    padding-bottom: 5rem;
+  }
   .right-header p {
     font-size: 0.9rem;
   }
@@ -1371,5 +1375,8 @@ section {
   }
   .left-about p {
     padding: 0 1rem;
+  }
+  .sec2 {
+    padding-bottom: 7rem;
   }
 }/*# sourceMappingURL=styles.css.map */
