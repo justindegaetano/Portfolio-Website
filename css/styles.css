@@ -1294,7 +1294,7 @@ section {
     padding: 2rem 2.5rem !important;
   }
   .portfolios {
-    padding: 0 2.5rem;
+    padding: 0 1.75rem;
     padding-bottom: 5rem;
   }
   .contact-content-con {
@@ -1357,7 +1357,7 @@ section {
 @media screen and (max-width: 500px) {
   .sec2,
   .sec3 {
-    padding: 2.5rem 0.5rem;
+    padding: 2.5rem 0.75rem;
   }
   .sec5 {
     padding: 2.5rem 4rem;
@@ -1373,7 +1373,7 @@ section {
   }
   .timeline {
     grid-template-columns: repeat(1, 1fr);
-    padding: 1.8rem 4rem;
+    padding: 1.8rem 2.25rem;
   }
   .timeline .timeline-item h5 {
     font-size: 0.9rem;
@@ -1395,16 +1395,13 @@ section {
 @media screen and (max-width: 460px) {
   .sec2,
   .sec3 {
-    padding: 2.5rem 0.2rem;
+    padding: 2.5rem 1.25rem;
   }
   .sec5 {
     padding: 2.5rem 3rem;
   }
   .about-container .right-about {
     grid-template-columns: repeat(1, 1fr);
-  }
-  .left-about p {
-    padding: 0 1rem;
   }
   .sec2 {
     padding-bottom: 7rem;
