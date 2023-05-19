@@ -1120,7 +1120,8 @@ section {
   }
   .about-container {
     font-size: 0.8rem;
-    padding: 1.5rem 0;
+    padding: 0;
+    padding-bottom: 1.5rem;
   }
   .about-container .about-item .abt-text {
     padding: 1.5rem;
@@ -1224,8 +1225,13 @@ section {
     padding: 0 !important;
   }
   .theme-btn {
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
+  }
+  .theme-btn i {
+    font-size: 1.3rem;
+    color: var(--color-grey-2);
+    pointer-events: none;
   }
   .header-content {
     grid-template-columns: repeat(1, 1fr);
@@ -1239,8 +1245,9 @@ section {
   .right-header {
     grid-row: 1;
     width: 90%;
-    margin: 0 auto;
-    padding-top: 0.8rem;
+    justify-content: flex-end;
+    margin: auto auto;
+    padding-top: 1.5rem;
   }
   .right-header h1 {
     padding: 0 1.5rem;
@@ -1256,6 +1263,13 @@ section {
     margin: 0 auto;
     width: 90%;
   }
+  .main-btn .btn-text {
+    font-size: 0.9rem;
+    padding: 0 1.3rem;
+  }
+  .main-btn .btn-icon {
+    padding: 0.8rem;
+  }
   .controls {
     top: auto;
     bottom: 0;
@@ -1268,6 +1282,9 @@ section {
   }
   .controls .control {
     margin: 1rem 0.3rem;
+  }
+  .stat-title {
+    font-size: 1.2rem;
   }
   .timeline {
     grid-template-columns: repeat(1, 1fr);
@@ -1356,10 +1373,23 @@ section {
   }
   .timeline {
     grid-template-columns: repeat(1, 1fr);
-    padding: 2.5rem 4rem;
+    padding: 1.8rem 4rem;
+  }
+  .timeline .timeline-item h5 {
+    font-size: 0.9rem;
+  }
+  .timeline .timeline-item span {
+    font-size: 0.9rem !important;
   }
   .progress-bars {
+    gap: 1rem;
     padding: 0 4.5rem;
+  }
+  .progress-bars .progress-bar .prog-title {
+    font-size: 0.9rem;
+  }
+  .progress-bars .progress-bar .progress-con .prog-text {
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 460px) {
@@ -1378,5 +1408,14 @@ section {
   }
   .sec2 {
     padding-bottom: 7rem;
+  }
+  .theme-btn {
+    width: 35px;
+    height: 35px;
+  }
+  .theme-btn i {
+    font-size: 1.1rem;
+    color: var(--color-grey-2);
+    pointer-events: none;
   }
 }/*# sourceMappingURL=styles.css.map */
