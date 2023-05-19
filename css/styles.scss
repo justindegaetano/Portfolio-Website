@@ -867,18 +867,25 @@ section {
     }
 }
 
-@media screen and (max-width:1432px) {
+@media screen and (max-width:1431px) {
     .right-header {
-        padding-right: 12rem;
+        padding-right: 10rem;
     }
     .sec2,
     .sec3 {
-        padding: 2.5rem 13rem;
+        padding: 2.5rem 10rem;
     }
     .sec5 {
-        padding: 2.5rem 9rem;
+        padding: 2.5rem 18rem;
+        p {
+            text-align: center;
+            padding-bottom: 1.5rem;
+        }
+        .contact-icon {
+            justify-content: center;
+            align-items: center;
+        }
     }
-
     .container {
         padding: 7rem 11rem;
     }
@@ -902,27 +909,6 @@ section {
     .contact-content-con .right-contact {
         margin-bottom: 6rem;
     }
-}
-
-@media screen and (max-width:1431px) {
-    .right-header {
-        padding-right: 10rem;
-    }
-    .sec2,
-    .sec3 {
-        padding: 2.5rem 10rem;
-    }
-    .sec5 {
-        padding: 2.5rem 18rem;
-        p {
-            text-align: center;
-            padding-bottom: 1.5rem;
-        }
-        .contact-icon {
-            justify-content: center;
-            align-items: center;
-        }
-    }
     .main-title {
         h2 {
             font-size: 3.7rem;
@@ -945,7 +931,6 @@ section {
                 padding: 1.5rem;
                 .large-text {
                     font-size: 2.7rem;
-                    font-weight: 700;
                 }
                 .small-text {
                     padding-left: 3rem;
@@ -955,18 +940,30 @@ section {
             }
         }
     }
+    .timeline-item {
+        h5 {
+            font-size: 1.1rem;
+            span {
+                font-size: 1.0rem;
+            }
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    .left-contact {
+        p {
+            font-size: 1rem;
+        }
+    }
 }
 
 @media screen and (max-width:1150px) {
-    .about-stats .progress-bars {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .timeline {
-        grid-template-columns: repeat(1, 1fr);
+    .progress-bars {
+        padding: 0 5.4rem;
     }
     .about-container {
         grid-template-columns: repeat(1, 1fr);
-        padding: .5rem;
         .right-about {
             padding: 2.5rem 5rem;
         }
@@ -979,7 +976,6 @@ section {
         }
         p {
             text-align: center;
-            padding: none;
         }
         .btn-con {
             justify-content: center;
@@ -1007,7 +1003,6 @@ section {
     }
     .left-about {
         justify-content: center;
-        padding: 0;
         h4 {
             text-align: center;
         }
@@ -1060,16 +1055,6 @@ section {
             padding-top: 2.4rem;
         }
     }
-    .about-stats .progress-bars {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .timeline {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 2.5rem 4rem;
-    }
-    .progress-bars {
-        padding: 0 6rem;
-    }
     .portfolios {
         grid-template-columns: repeat(1, 1fr);
         padding: 0 6.5rem;
@@ -1107,9 +1092,18 @@ section {
     .left-header {
         padding: 0 9rem;
     }
+    .left-about {
+        p {
+            padding: 0 6rem;
+        }
+    }
 }
 
 @media screen and (max-width:775px) {
+    .sec2,
+    .sec3 {
+        padding: 2.5rem 1.5rem;
+    }
     .theme-btn {
         width: 50px;
         height: 50px;
@@ -1126,20 +1120,6 @@ section {
         background-color: var(--color-grey-5);
         .control {
             margin: 1rem .3rem;
-        }
-    }
-    .about-container {
-        grid-template-columns: repeat(1, 1fr);
-        padding-top: .8rem;
-        .right-about {
-            grid-template-columns: repeat(1, 1fr);
-            padding-top: 2.5rem;
-        }
-        .left-about {
-            padding-right: 0;
-            p{
-                padding-left: 0;
-            }
         }
     }
     .stat-title {
@@ -1187,12 +1167,51 @@ section {
             }
         }
     }
+    .about-container {
+        font-size: .8rem;
+        padding: 1.5rem 0;
+        .about-item {
+            .abt-text {
+                padding: 1.5rem;
+                .large-text {
+                    font-size: 2rem;
+                }
+                .small-text {
+                    padding-left: 3rem;
+                    font-size: .9rem;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+    .timeline-item {
+        h5 {
+            font-size: .9rem;
+            span {
+                font-size: .8rem;
+            }
+        }
+        p {
+            font-size: .8rem;
+        }
+    }
+    .left-contact {
+        p {
+            font-size: .9rem;
+        }
+    }
 
     .left-about {
         p {
             font-size: .9rem;
         }
     }
+
+    .right-about {
+        gap: .5rem !important;
+        padding: 2.5rem 1rem !important;
+    }
+
     .contact-item {
         padding-top: 1rem;
         flex-direction: column;
@@ -1328,12 +1347,6 @@ section {
         padding: 2rem 2.5rem !important;
     }
 
-    .about-stats {
-        .progress-bars {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-
     .portfolios {
         padding: 0 2.5rem;
     }
@@ -1371,10 +1384,10 @@ section {
         .icon {
             grid-template-columns: 25px 1fr;
         }
-    }
-    .sec2,
-    .sec3 {
-        padding: 2.5rem 1.5rem;
+        .sec2,
+        .sec3 {
+            padding: 2.5rem 1rem;
+        }
     }
     .sec5 {
         padding: 2.5rem 6rem;
@@ -1415,14 +1428,32 @@ section {
             font-size: .9rem;
         }
     }
+    .about-stats .progress-bars {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .timeline {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2.5rem 4rem;
+    }
+    .progress-bars {
+        padding: 0 4.5rem;
+    }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:460px) {
     .sec2,
     .sec3 {
         padding: 2.5rem .2rem;
     }
     .sec5 {
         padding: 2.5rem 3rem;
+    }
+    .about-container .right-about {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .left-about {
+        p {
+            padding: 0 1rem;
+        }
     }
 }
